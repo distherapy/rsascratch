@@ -5,9 +5,9 @@ x = random.randint(1,6)
 y = ((2*x)/3)**3
 y = math.floor(y)
 o = s*y
-print(s)
-print(y)
-print(o)
+print("s =", s)
+print("y =", y)
+print("o =", o)
 p = []
 q = []
 p.append(o)
@@ -18,4 +18,7 @@ def switch():
 			#? if seed repeats, -1...+2...-3.../-2x...
 		else:
 			q.append(n)	
-print(p, q)
+print("p =", p)
+random.shuffle(p)
+m = (random.choice(p))
+print("m =", m)
